@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2ToughCatching.com</title>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+
+
+<body>
+
+    <nav>
+
+        <img src="./2tcmask.png" class="mask" alt="mask logo" height="175"> 
+    
+        <div class="tough">2 Tough Catching</div>
+
+        <ul id="mySidenav" class="nav-items">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="2tough.html">Home</a>
+            <a href="2toughabout.html">About</a>
+            <a href="2toughcamps.html">Camps</a>
+            <a href="2toughvideo.html">Video</a>
+            <a href="2toughcontact.html">Contact</a>
+
+            <div class="menuwhole">
+              <span class="menubtn" onclick="openNav()">&#9776;</span>
+              <span class="menutxt" onclick="openNav()">Menu</span>
+          </div>
+
+            
+    </nav>
+
+    <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+        }
+        </script>
