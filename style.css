@@ -6,63 +6,112 @@
 }
 
 nav {
-    border:5px solid red; 
+
     height: 200px;
     background: #999999;
     display: flex; 
     justify-content: space-between; 
     align-items: center;
+}
 
+.menubtn {
+
+    font-size: 40px; 
+    position: fixed; 
+    left: 0;
+    top: 0; 
+    margin-left: 20px; 
+    margin-top: 75px; 
+    z-index: 1; 
+    font-variant: small-caps; 
+}
+
+.menutxt {
+
+    font-size: 18px; 
+    position: fixed; 
+    left: 0;
+    top: 0; 
+    margin-left: 60px; 
+    margin-top: 92px; 
+    z-index: 1; 
+    font-variant: small-caps; 
+}
+
+.menuwhole:hover {
+    color: purple; 
+}
+
+.nav-items {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 0;
+    top: 0;
+    left: 0;
+    background-color: #999999;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 200px; 
+    font-size: 10px;
+    word-spacing: 10px;
+    justify-content: center; 
+    font-size: 25px;
+    font-weight: bolder;
+    list-style-type: none; 
+}
+
+
+/* The navigation menu links */
+.nav-items a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
 }
 
 .mask {
 
-    border:5px solid red; 
-    align-items:center; 
-    
+    position: fixed; 
+    right: 0;    
 }
 
 .tough {
-    border:5px solid red; 
-    align-items:center; 
+    position: fixed;
+    width: 875px;
+    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
+    left: 0;
+    right: 0;
+
     font-size: 100px;
     font-weight: bold;
     font-variant:small-caps; 
     text-decoration:underline;
-
 }
 
-.nav-items {
-    border:5px solid red; 
-    font-size: 10px;
-    word-spacing: 10px;
-    justify-content: center; 
-    padding-right: 10px;
-    font-size: 25px;
-    font-weight: bolder;
-    list-style-type: none; 
 
-}
 
 
 a:link {
     color: black;
 }
 a:hover {
-    color:red; 
+    color:purple; 
 }
 
 .welcome {
-    border:5px solid red; 
+
     display:flex;
     justify-content: center; 
-    padding-top: 60px 
-    
+    padding-top: 60px; 
+    font-variant: small-caps;  
 }
 
 
 .pic1 {
-    border:5px solid red; 
+
     border-radius: 30px;
     display: block; 
     margin-left: auto; 
@@ -71,7 +120,7 @@ a:hover {
 }
 
 .pic2 {
-    border:5px solid red; 
+
     border-radius: 30px;
     display: block; 
     margin-left: auto; 
@@ -80,17 +129,16 @@ a:hover {
 }
 
 .pic3 {
-    border:5px solid red; 
+
     border-radius: 30px;
     display: block; 
     margin-left: auto; 
     margin-right: auto;
-    width: 75%;
-    
+    width: 75%;   
 }
 
 .pic4 {
-    border:5px solid red; 
+
     border-radius: 30px;
     display: block; 
     margin-left: auto; 
