@@ -11,37 +11,38 @@
 
 </head>
 
-
 <body>
+    <div class="container">
+        <div class="navbar">
+            <img src="2tcmask.png" class="logo" alt="logo">
+        </div>
+        <div class="menu">
+            <button onclick="myFunction()" id="menubtn">&#9776;</button>
+        </div>
+        <nav id="navlinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="2toughabout.html">About</a></li>
+                <li><a href="2toughcamps.html">Camps</a></li>
+                <li><a href="2toughvideo.html">Video</a></li>
+                <li><a href="2toughcontact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 
-    <nav>
-
-        <img src="./2tcmask.png" class="mask" alt="mask logo" height="175"> 
-    
-        <div class="tough">2 Tough Catching</div>
-
-        <ul id="mySidenav" class="nav-items">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="2tough.html">Home</a>
-            <a href="2toughabout.html">About</a>
-            <a href="2toughcamps.html">Camps</a>
-            <a href="2toughvideo.html">Video</a>
-            <a href="2toughcontact.html">Contact</a>
-
-            <div class="menuwhole">
-              <span class="menubtn" onclick="openNav()">&#9776;</span>
-              <span class="menutxt" onclick="openNav()">Menu</span>
-          </div>
-
-            
-    </nav>
-
+    <!--Open navigation bar-->
     <script>
-        function openNav() {
-          document.getElementById("mySidenav").style.width = "250px";
-        }
-        
-        function closeNav() {
-          document.getElementById("mySidenav").style.width = "0";
-        }
-        </script>
+        function myFunction() {
+            var x = document.getElementById("navlinks");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }
+}
+    </script>
+
+</body>
+
+</html>

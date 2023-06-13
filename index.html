@@ -11,45 +11,38 @@
 
 </head>
 
-
 <body>
-
-    <nav>
-
-        <img src="./2tcmask.png" class="mask" alt="mask logo" height="175"> 
-    
-        <div class="tough">2 Tough Catching</div>
-
-    
-        <ul id="mySidenav" class="nav-items">
-            <a href="index.html">Home</a>
-            <a href="2toughabout.html">About</a>
-            <a href="2toughcamps.html">Camps</a>
-            <a href="2toughvideo.html">Video</a>
-            <a href="2toughcontact.html">Contact</a>
-
-    </nav>
-
-    <div class="welcome">
-        <h1>
-                Welcome to 2 Tough Catching <br></br>
-        </h1>
+    <div class="container">
+        <div class="navbar">
+            <img src="2tcmask.png" class="logo" alt="logo">
+        </div>
+        <div class="menu">
+            <button onclick="myFunction()" id="menubtn">&#9776;</button>
+        </div>
+        <nav id="navlinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="2toughabout.html">About</a></li>
+                <li><a href="2toughcamps.html">Camps</a></li>
+                <li><a href="2toughvideo.html">Video</a></li>
+                <li><a href="2toughcontact.html">Contact</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <br> <img src="./neb1.jpg" class="pic1" alt="nebraska1"> </br>
-
- 
-    <br> <img src="./neb2.jpg" class="pic2" alt="nebraska2"> </br>
-
-
-    <br> <img src="./nku1.jpg" class="pic3"alt="nku1"> </br>
-
-
-    <br> <img src="./singley.jpg" class="pic4" alt="singley"> </br>
-
-
+    <!--Open navigation bar-->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("navlinks");
+            if (x.style.display === "none" || x.style.display === "") {
+                x.style.display = "block";
+            } 
+            else {
+                x.style.display = "none";
+            }
+}
+    </script>
 
 </body>
-
 
 </html>
