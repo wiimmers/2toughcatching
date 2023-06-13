@@ -2,149 +2,144 @@
     box-sizing: border-box;
     margin: 0; 
     padding: 0; 
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
 }
 
-nav {
-
-    height: 200px;
-    background: #999999;
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center;
-}
+/*
 
 .menubtn {
-
-    font-size: 40px; 
-    position: fixed; 
-    left: 0;
-    top: 0; 
-    margin-left: 20px; 
-    margin-top: 75px; 
-    z-index: 1; 
-    font-variant: small-caps; 
+    border:solid red; 
+    display: block; 
+    color: black;
+    font-size: 30px;
+    cursor:pointer;
+    position:fixed; 
 }
 
-.menutxt {
 
-    font-size: 18px; 
-    position: fixed; 
-    left: 0;
-    top: 0; 
-    margin-left: 60px; 
-    margin-top: 92px; 
-    z-index: 1; 
-    font-variant: small-caps; 
+.menubtn:hover {
+    color:linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2)); 
+    filter: blur(1px);
 }
 
-.menuwhole:hover {
-    color: purple; 
-}
 
-.nav-items {
+.sidenav {
     height: 100%;
     width: 0;
     position: fixed; 
-    z-index: 0;
+    z-index: 1;
     top: 0;
     left: 0;
-    background-color: #999999;
+    background-color: gray;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 200px; 
-    font-size: 10px;
-    word-spacing: 10px;
-    justify-content: center; 
-    font-size: 25px;
-    font-weight: bolder;
-    list-style-type: none; 
+    padding-top: 60px;
 }
 
 
-/* The navigation menu links */
-.nav-items a {
+
+.sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: black;
     display: block;
     transition: 0.3s;
 }
 
-.mask {
+*/
 
-    position: fixed; 
-    right: 0;    
+.container {
+    width: 100%; 
+    height: 100vh; 
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(stadium.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    padding-right: 5%; 
+    padding-top: 3%; 
+    box-sizing: border-box; 
 }
 
-.tough {
-    position: fixed;
-    width: 875px;
-    margin: 5% auto; /* Will not center vertically and won't work in IE6/7. */
-    left: 0;
-    right: 0;
+.navbar {
+    height: 12%;
+    display: inline-flex; 
+    align-items: center; 
+}
 
-    font-size: 100px;
-    font-weight: bold;
-    font-variant:small-caps; 
-    text-decoration:underline;
+.logo { 
+    width: 150px; 
+}
+
+.menu {
+    display: fixed; 
+    float: right; 
+}
+
+#menubtn { 
+    align-items: center; 
+    font-size: 50px;
+    cursor: pointer; 
+    display: inline-flex;
+    background-color: transparent; 
+    border: none; 
+    color: white;
+    float:inline-end
+}
+
+
+#menubtn:hover {
+    color:linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2)); 
+    filter: blur(1px);
+}
+
+nav {
+    display: none; 
+    overflow: hidden;  
+    text-align: center;
+    background-color:#333333; 
+    border-radius: 40px; 
+
+}
+
+
+nav ul li {
+    list-style: none; 
+    display: inline-block; 
+    border-radius: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: bold; 
+    padding:30px;
+}
+
+nav a:hover {
+    background-color: rgba(0,0,0,0.2);
 }
 
 
 
 
-a:link {
-    color: black;
-}
-a:hover {
-    color:purple; 
-}
-
-.welcome {
-
-    display:flex;
-    justify-content: center; 
-    padding-top: 60px; 
-    font-variant: small-caps;  
-}
 
 
-.pic1 {
 
-    border-radius: 30px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    width: 75%;
-}
 
-.pic2 {
 
-    border-radius: 30px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    width: 75%;
-}
 
-.pic3 {
 
-    border-radius: 30px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    width: 75%;   
-}
 
-.pic4 {
 
-    border-radius: 30px;
-    display: block; 
-    margin-left: auto; 
-    margin-right: auto;
-    width: 75%;
-}
+
+
+
+
 
 
 
