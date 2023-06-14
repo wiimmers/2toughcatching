@@ -14,10 +14,10 @@
 <body>
     <div class="container">
         <div class="navbar">
-            <img src="2tcmask.png" class="logo" alt="logo">
+            <img src="images/2tcmask.png" class="logo" alt="logo">
         </div>
         <div class="menu">
-            <button onclick="myFunction()" id="menubtn">&#9776;</button>
+            <button onclick="openclosenav()" id="menubtn">&#9776;</button>
         </div>
         <nav id="navlinks">
             <ul>
@@ -28,20 +28,124 @@
                 <li><a href="2toughcontact.html">Contact</a></li>
             </ul>
         </nav>
+        
+        <div class="wrapper">
+            <div class="welcomecontainer">
+                <div class="catchit">
+                    <h1>Catch it.</h1>
+                    <h1>Block it.</h1>
+                    <h1>Throw it.</h1>
+                    <h3>Be the toughest on the field.</h3>
+                </div>
+            </div>
+            <div class="photos">
+                <img src="images/neb1.jpg" onclick="scaleimage1()" id="pic1" alt="logo">
+                <img src="images/neb2.jpg" onclick="scaleimage2()" id="pic2" alt="logo">
+                <img src="images/nku1.jpg" onclick="scaleimage3()" id="pic3" alt="logo">
+                <img src="images/singley.jpg" onclick="scaleimage4()" id="pic4" alt="logo">
+            </div>
+        </div>
     </div>
 
     <!--Open navigation bar-->
     <script>
-        function myFunction() {
+        function openclosenav() {
             var x = document.getElementById("navlinks");
-            if (x.style.display === "none" || x.style.display === "") {
+            if (x.style.display === "none" || x.style.display === "") 
+            {
                 x.style.display = "block";
             } 
-            else {
+            else 
+            {
                 x.style.display = "none";
             }
-}
+        }
     </script>
+
+    <script>
+    function scaleimage1() {
+        var w = document.getElementById("pic1")
+        var x = document.getElementById("pic2")
+        var y = document.getElementById("pic3")
+        var z = document.getElementById("pic4")
+        
+        if(w.style.scale === "none" || w.style.scale ==="")
+        {
+            w.style.scale = 2.0;
+            x.style.scale = "none";
+            y.style.scale = "none";
+            z.style.scale = "none";
+
+        }
+        else 
+        {
+            w.style.scale = "none";
+        } 
+
+    }
+
+    function scaleimage2() {
+        var w = document.getElementById("pic2")
+        var x = document.getElementById("pic1")
+        var y = document.getElementById("pic3")
+        var z = document.getElementById("pic4")
+        
+        if(w.style.scale === "none" || w.style.scale ==="")
+        {
+            w.style.scale = 2.0;
+            x.style.scale = "none";
+            y.style.scale = "none";
+            z.style.scale = "none";
+
+        }
+        else 
+        {
+            w.style.scale = "none";
+        } 
+    }
+
+    function scaleimage3() {
+        var w = document.getElementById("pic3")
+        var x = document.getElementById("pic2")
+        var y = document.getElementById("pic1")
+        var z = document.getElementById("pic4")
+        
+        if(w.style.scale === "none" || w.style.scale ==="")
+        {
+            w.style.scale = 2.0;
+            x.style.scale = "none";
+            y.style.scale = "none";
+            z.style.scale = "none";
+
+        }
+        else 
+        {
+            w.style.scale = "none";
+        } 
+    }
+
+    function scaleimage4() {
+        var w = document.getElementById("pic4")
+        var x = document.getElementById("pic2")
+        var y = document.getElementById("pic3")
+        var z = document.getElementById("pic1")
+        
+        if(w.style.scale === "none" || w.style.scale ==="")
+        {
+            w.style.scale = 2.0;
+            x.style.scale = "none";
+            y.style.scale = "none";
+            z.style.scale = "none";
+
+        }
+        else 
+        {
+            w.style.scale = "none";
+        } 
+    }
+    
+    </script>
+
 
 </body>
 
