@@ -184,6 +184,15 @@ nav ul li:hover {
         margin-top: 3vh; 
     }
 
+    .welcomecontainer:hover{
+        transform:none;
+        transition: 0.5s; 
+    }
+    .photos:hover {
+        transform:none;
+        transition: 0.5s; 
+    }
+
     .welcomecontainer {
         margin: auto; 
         width: 100vw;
