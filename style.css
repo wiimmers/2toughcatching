@@ -262,6 +262,7 @@ footer {
         transform: none; 
 
     }
+
     .photos:hover {
         transform: none; 
     }
@@ -295,7 +296,7 @@ footer {
     }
 
     .footer {
-        margin-bottom: 25%; 
+        margin-bottom: 50%; 
     }
 
     .socials {
