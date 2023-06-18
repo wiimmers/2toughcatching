@@ -13,11 +13,12 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="header">
             <img src="images/2tcmask.png" class="logo" alt="logo">
-        </div>
-        <div class="menu">
-            <button onclick="myFunction()" id="menubtn">&#9776;</button>
+            <div class="ttc">2TC</div>
+            <div class="menu">
+                <button onclick="openclosenav()" id="menubtn">&#9776;</button>
+            </div>
         </div>
         <nav id="navlinks">
             <ul>
@@ -29,20 +30,19 @@
             </ul>
         </nav>
     </div>
-
-    <!--Open navigation bar-->
     <script>
-        function myFunction() {
+        function openclosenav() {
             var x = document.getElementById("navlinks");
-            if (x.style.display === "none" || x.style.display === "") {
-                x.style.display = "block";
+            if (x.style.display === "none" || x.style.display == "") 
+            {
+                x.style.display = "block"; 
             } 
-            else {
+            else 
+            {
                 x.style.display = "none";
             }
-}
+        }
     </script>
-
 </body>
 
 </html>

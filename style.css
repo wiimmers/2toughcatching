@@ -158,7 +158,6 @@ h3 {
     max-width: 50%;
 }
 
-
 .photos img{
     width: 100%;
     object-fit: cover;
@@ -222,6 +221,72 @@ footer {
     text-decoration:none; 
     padding:20px;
     font-size: 20px; 
+}
+
+#about {
+    width: 100%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    opacity: 75%;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2));
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+    transition: 0.5s;
+    margin-bottom: 1%;
+}
+
+.bio {
+    width: 100%;
+    color: white;
+    text-align: center;
+    opacity: 75%;
+    font-size: 20px;
+    letter-spacing: 3px;
+    background: linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2));
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.25);
+    padding: 2%;
+    margin-bottom: 2%;  
+    line-height:auto; 
+}
+
+.bio h3 {
+    text-align: center; 
+}
+
+.headshots {  
+    width: 100%;
+    background: linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2));
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    opacity: 75%; 
+}
+
+.headshots h1 {
+    text-align: center; 
+    color: white; 
+}
+
+.headshots p {
+    text-align: center; 
+    color: white; 
+}
+
+.headshots .hs { 
+    display: grid; 
+    width: 30vw; 
+    object-fit: cover;
+    margin: auto; 
+    padding-top: 2.5%;
+    padding-bottom:2.5%;   
+}
+
+.headshots img {
+    border-radius: 10%; 
 }
 
 @media screen and

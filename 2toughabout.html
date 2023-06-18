@@ -13,11 +13,12 @@
 
 <body>
     <div class="container">
-        <div class="navbar">
+        <div class="header">
             <img src="images/2tcmask.png" class="logo" alt="logo">
-        </div>
-        <div class="menu">
-            <button onclick="myFunction()" id="menubtn">&#9776;</button>
+            <div class="ttc">2TC</div>
+            <div class="menu">
+                <button onclick="openclosenav()" id="menubtn">&#9776;</button>
+            </div>
         </div>
         <nav id="navlinks">
             <ul>
@@ -28,19 +29,72 @@
                 <li><a href="2toughcontact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <div class="wrapper">
+            <h1 id = "about">ABOUT</h1>
+            <div class="bio">
+                <h1 style="text-align: center;">Hi! I'm Nick.</h1>
+                <p>
+                    I played baseball for almost my entire life, it became my first
+                    love. With over 20 years of playing experience, 5 of which came at the college level, I'm looking
+                    to share my knowledge of the game at the catching position. I caught my entire career and believe
+                    that the catcher is one of the most important players on the team. Being a part of every single 
+                    pitch is unique to this position and requires intense focus and specialized skills, this is why
+                    at 2ToughCatching we like to simplify the process to 4 areas:
+                    <h3>Catch it, Block it, Throw it, Be the toughest on the field.</h3>
+                </p>
+            </div>
+            <div class="headshots">
+                <h1>Norfolk State</h1>
+                <img src="images/nsu.jpg" loading = "lazy" class = "hs" alt="nsu" id = "nsuhs">
+                <p>I love baseball</p>
+                <h1>Eastern Oklahoma State</h1>
+                <img src="images/eosc.jpg" loading = "lazy" class = "hs" alt="nsu" id = "eoschs">
+                <p>I love baseball</p>
+                <h1>Nebraska</h1>
+                <img src="images/unl.jpg" loading = "lazy" class = "hs" alt="nsu" id = "unlhs">
+                <p>I love baseball</p>
+                <h1>Northern Kentucky</h1>
+                <img src="images/nkuhs.jpg" loading = "lazy" class = "hs" alt="nsu" id = "nkuhs">
+                <p>I love baseball</p>
+            </div> 
+        </div>  
+        
+        <footer class="footer">
+            <div class="socials">
+                <span class="icons">
+                    <a href="https://www.instagram.com/wiimmers/" target="_blank"><img src = "images/insta.png" loading = "lazy" id = "instaico"></a>
+                    <a href="https://twitter.com/nwiimmers" target="_blank"><img src = "images/twitter.png" loading = "lazy"></a>
+                    <a href="https://www.linkedin.com/in/nicholas-wimmers-0165a027b?trk=people-guest_people_search-card" target="_blank"><img src = "images/linkedin.png" loading = "lazy"></a>
+                    <a href="https://www.instagram.com/wiimmers/" target="_blank"><img src = "images/facebook.png" loading = "lazy"></a>
+                </span>
+            </div>
+            <div class="notsocials">
+                <p>2 Tough Catching is owned and operated by Nicholas Wimmers</p>
+                <p><span>
+                    <a href="index.html">Home</a>
+                    <a href="2toughabout.html">About</a>
+                    <a href="2toughcamps.html">Camps</a>
+                    <a href="2toughvideo.html">Video</a>
+                    <a href="2toughcontact.html">Contact</a>
+                </span></p>
+            </div>
+        </footer>
+
     </div>
 
-    <!--Open navigation bar-->
     <script>
-        function myFunction() {
+        function openclosenav() {
             var x = document.getElementById("navlinks");
-            if (x.style.display === "none" || x.style.display === "") {
-                x.style.display = "block";
+            if (x.style.display === "none" || x.style.display == "") 
+            {
+                x.style.display = "block"; 
             } 
-            else {
+            else 
+            {
                 x.style.display = "none";
             }
-}
+        }
     </script>
 
 </body>
