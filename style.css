@@ -258,35 +258,33 @@ footer {
     text-align: center; 
 }
 
-.headshots {  
+.gifsborder {  
     width: 100%;
     background: linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2));
     backdrop-filter: blur(2px);
     border-radius: 20px;
-    opacity: 75%; 
-}
-
-.headshots h1 {
+    opacity: 75%;
     text-align: center; 
     color: white; 
 }
 
-.headshots p {
+.gifs {
+    width: 95%;
+    border-radius: 20px;
+}
+
+.heading {
+    padding: 2%;
+}
+
+.construction {
+    width: 100%;
+    background: linear-gradient(135deg, rgba(160,159,159,0.4), rgba(160,159,159,0.2));
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    opacity: 75%;
     text-align: center; 
     color: white; 
-}
-
-.headshots .hs { 
-    display: grid; 
-    width: 30vw; 
-    object-fit: cover;
-    margin: auto; 
-    padding-top: 2.5%;
-    padding-bottom:2.5%;   
-}
-
-.headshots img {
-    border-radius: 10%; 
 }
 
 @media screen and
