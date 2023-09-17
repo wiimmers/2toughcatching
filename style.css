@@ -264,7 +264,8 @@ footer h3 {
     border-radius: 20px;
     opacity: 75%;
     text-align: center; 
-    color: white; 
+    color: white;
+    padding-bottom: 5%; 
 }
 
 .gifs {
