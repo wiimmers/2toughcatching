@@ -338,6 +338,11 @@ footer h3 {
     color: #898989;
 }
 
+#ytplayer {
+    width: 40%; 
+    height: 400px; 
+}
+
 
 @media screen and
 (max-width: 900px) and (orientation: portrait) {
